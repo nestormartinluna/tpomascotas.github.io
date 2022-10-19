@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=StyleSheet href="estiloLogin.css">	
+	<title>Login</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./Home.html">Home</a></li>
+				<li><a href="./Productos.html">Productos</a></li>
+				<li><a href="./Peluqueria.html">Peluqueria</a></li>
+				<li><a href="./Register.html">Register</a></li>
+				<li><a href="./Login.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!--TITULO-->
+		<div class="iniciar">
+			<h1>Iniciar Sesion</h1>
+		</div>
+
+		<form action="" class="formulario" id="formulario">
+
+			<!--USUARIO-->
+			<div class="formulario_grupo" id="grupo_usuario">
+				<label for="usuario" class="formulario_label">Usuario</label>
+				<div class="formulario_grupo_input">
+					<input type="text" class="formulario_input" name="usuario" id="usuario">
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error">El usuario tien que ser de 4 a 16 digitos y solo puede contener numeros, letra y guion bajo</p>
+			</div>
+
+			<!--CONTRASEÑA-->
+			<div class="formulario_grupo" id="grupo_contra">
+				<label for="contra" class="formulario_label">Contraseña</label>
+				<div class="formulario_grupo_input">
+					<input type="password" class="formulario_input" name="contra" id="contra">
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error">La contraseña tiene que ser de 4 a 12 digitos</p>
+			</div>
+
+			<!--RECORDAR-->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					<span>Recordar</span>
+				</label>
+			</div>
+
+			<!--ERROR-->
+			<div class="formulario_mensaje" id="formulario_mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellene el formulario correctamente</p>
+			</div>
+			
+			<!--EXITO-->
+			<div class="formulario_grupo formulario_grupo_btn_enviar">
+				<button type="submit" class="formulario_btn">Iniciar Sesion</button>
+				<p class="formulario_mensaje_exito" id="formulario_mensaje_exito">Ha iniciado sesion!</p>
+			</div>
+
+			<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+			<script src="formularioSesion.js"></script>
+	</main>
+	
+	<footer>
+	
+	</footer>
+</body>
+</html>
