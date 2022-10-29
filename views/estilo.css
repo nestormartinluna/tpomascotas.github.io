@@ -12,13 +12,13 @@ header {
 footer {
   background-color: rgb(250, 201, 4);
   color: black;
-  padding: 6vh;
+  padding: 6vh 6vh;
 
 }
 
 main {
   background-color: rgb(239, 244, 244);
-  height: 56vh;
+  
 }
 
 .navbar ul li a i {
@@ -282,7 +282,7 @@ main {
 	background: #dfdfdfbb;
 	max-width: 800px;
 	width: 90%;
-	margin: auto;
+	margin: 70px auto;
 	padding: 10px 35px 35px;
 }
 .iniciar{

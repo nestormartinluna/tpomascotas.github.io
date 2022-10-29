@@ -18,8 +18,8 @@
 		<div class="logo2">
 			<img src="../Public/logo2.png" class="logo" alt="logo">
 		</div>
-		<nav class="navbar">
 
+		<nav class="navbar">
 			<ul class="contenedor">
 				<li><a href="./Home.html"><i class="fa-solid fa-house"></i>Home</a></li>
 				<li><a href="./Productos.html"><i class="fa-solid fa-magnifying-glass"></i>Productos</a></li>
@@ -29,23 +29,68 @@
 				<li><a href="./Login.html"><i class="fa-solid fa-right-to-bracket"></i>Ingresar</a></li>
 			</ul>
 		</nav>
+
 	</header>
+
 	<main>
-		<h1></br></br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">Ingresar</font></h1>
-		<h2 class="animate__animated animate__bounce" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ingrese su usuario y clave de acceso
-			<marquee behavior="alternate" direction="up" width="15%">
-				<marquee direction="right" behavior="alternate"><font color="#FF0000">...aqui!</font></marquee>
-			</marquee>
-		</h2></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Usuario       </b><input type="text" /></br></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Clave      </b><input type="password" /></br></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Ingresar" /><br />
-	</main>	
-		<footer>
+		<!--TITULO-->
+		<div class="iniciar">
+			<h1>Iniciar Sesion</h1>
+		</div>
+	
+		<form action="" class="formulario" id="formulario">
+	
+			<!--USUARIO-->
+			<div class="formulario_grupo" id="grupo_usuario">
+				<label for="usuario" class="formulario_label">Usuario</label>
+				<div class="formulario_grupo_input">
+					<input type="text" class="formulario_input" name="usuario" id="usuario">
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error">El usuario tien que ser de 4 a 16 digitos y solo puede contener numeros,
+					letra y guion bajo</p>
+			</div>
+	
+			<!--CONTRASEÑA-->
+			<div class="formulario_grupo" id="grupo_contra">
+				<label for="contra" class="formulario_label">Contraseña</label>
+				<div class="formulario_grupo_input">
+					<input type="password" class="formulario_input" name="contra" id="contra">
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error">La contraseña tiene que ser de 4 a 12 digitos</p>
+			</div>
+	
+			<!--RECORDAR-->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					<span>Recordar</span>
+				</label>
+			</div>
+	
+			<!--ERROR-->
+			<div class="formulario_mensaje" id="formulario_mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellene el formulario correctamente
+				</p>
+			</div>
+	
+			<!--EXITO-->
+			<div class="formulario_grupo formulario_grupo_btn_enviar">
+				<button type="submit" class="formulario_btn">Iniciar Sesion</button>
+				<p class="formulario_mensaje_exito" id="formulario_mensaje_exito">Ha iniciado sesion!</p>
+			</div>
+	
+			<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+			<script src="formularioSesion.js"></script>
+	</main>
+
+	<footer>
 			<p class="pafooter">Nuestra Ubicacion</p>
 			<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=152&amp;height=115&amp;hl=en&amp;q=av de mayo 1500&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://receivesms.one">receivesms</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:115px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:115px;}.gmap_iframe {height:115px!important;}</style></div>
 			<p class="pafooter2">Copyright © 1999-2022 Can&Cat</p>
-		</footer>	
+	</footer>	
+	
 </body>
 
 </html>
