@@ -15,12 +15,7 @@ footer {
   padding: 6vh;
 
 }
-
-main {
-  background-color: rgb(239, 244, 244);
-  height: 56vh;
-}
-
+ 
 .navbar ul li a i {
   display: flex;
   justify-content: center;
@@ -81,7 +76,15 @@ main {
 .navbar ul li:hover::before {
   width: 100%;
 }
+/************main*********/
+main{
+  width:90vw;
+  margin: auto;
+}
 
+
+
+/*****************footer***********************/
 section {
   color: brown;
 }
