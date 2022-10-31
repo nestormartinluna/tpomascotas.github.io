@@ -82,12 +82,59 @@ main {
   width: 100%;
 }
 /************main*********/
-main{
-  width:90vw;
-  margin: auto;
+.titulares{
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bolder;
+	color:black
+}
+.grupo-seccion{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 5%;
+}
+.contenedor-producto{
+	margin: 2%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+
+}
+.imagen-productos-home{
+	width: 100%;
+	height: 100%;
+	border: 2px black solid;
+}
+.descripcion-productos-home{
+	background-color: white;
+	border: 2px black solid;
+	padding: 4%;
+	text-align: end;
+}
+.descripcion-productos-home:hover{
+	background-color:black;
+	font-size: 1.5em;
+	padding: 0%;
+	color:#00ff15
+}
+.flex-juntar{
+	text-align: center;
+	font-size: 1em;
+	color: blue;
+	font-weight:bold;
+}
+.flex-juntar:hover{
+font-size: 1.25rem;
+color:rgb(16, 244, 213)
 }
 
-
+.descripcion-art{
+	text-align: center;
+	font-size: 1.25em;
+}
 
 /*****************footer***********************/
 section {
@@ -100,20 +147,56 @@ section {
 }
 /******media query******/
 @media (min-width: 461px) {
-
+	.contenedor{
+      font-size: 1.5em;
+	}
+	.grupo-seccion {
+		display: grid;
+		margin: 5%;
+		grid-template-columns: 1fr 1fr;
+		gap: 18px;
+	}
+	.titulares{
+		font-size: 2em;
+	}
+	.descripcion-art {
+		text-align: center;
+		font-size: 1em;
+		font-weight: bold;
+	}
 }
 
   @media (min-width: 761px) {
-    header {
-      background-color: red;
-    }
+    .logo{
+		width: 10%;
+	}
+	
+	.contenedor{
+		font-size: 2em;
+	}
+	.grupo-seccion {
+		margin: 5%;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	}
+	.descripcion-art {
+		font-size: 0.8em;
+	}
   }
 
   /*********************************************************/
   @media (min-width: 1200px) {
-    header {
-      background-color: green;
-    }
+    .logo{
+		width: 10%;
+	}
+	.grupo-seccion {
+		margin: 1%;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 10px;
+	}
+	.descripcion-art {
+		font-size: 0.4em;
+	}
   }
 
   /*********************************************************/
