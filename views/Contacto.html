@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
 	<header>
 		<div class="logo2">
 			<img src="../Public/logo2.png" class="logo" alt="logo">
@@ -28,17 +29,75 @@
 				<li><a href="./Login.html"><i class="fa-solid fa-right-to-bracket"></i>Ingresar</a></li>
 			</ul>
 		</nav>
+
 	</header>
+
 	<main>
-		<form method="post" action="mailto:email@exemple.com" >
-			<h1></br></br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">Contacto</font></h1>
-			<h2 class="animate__animated animate__bounce" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ingrese sus datos y su consulta y lo contactaremos <font color="#FF0000">... a la brevedad!</font> </h2></br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Nombre y Apellido   </b><input type="text" size=50 name=nombre_apellido /></br></br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Correo electronico   </b><input type="text" size=70 name=email /></br></br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Mascota   </b><input type="radio" name="mascota" /> Perro &nbsp;<input type="radio" name="mascota" /> Gato &nbsp;<input type="radio" name="mascota" /> Otra (indicar) <input type="text" size="46" /></br></br>	
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Consulta  </b><textarea cols="80" rows="2"></textarea>
-			&nbsp;&nbsp;&nbsp;&nbsp;<b>          </b><input type="submit" value="Enviar consulta" />
+		<!--TITULO-->
+		<div class="iniciar">
+			<h1>Contacto</h1>
+		</div>
+
+		<form method="post" action="mailto:email@exemple.com" class="formulario" id="formulario">
+
+			<!--NOMBRE Y APELLIDO-->
+			<div class="formulario_grupo" id="grupo_nombre">
+				<label for="nombre" class="formulario_label">Nombre y Apellido</label>
+				<div class="formulario_grupo_input">
+					<input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Jonathan Smith">
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letra y guion bajo</p>
+			</div>			
+
+			<!--CORREO-->
+			<div class="formulario_grupo" id="grupo_correo">
+				<label for="correo" class="formulario_label">Correo Electrónico</label>
+				<div class="formulario_grupo_input">
+					<input type="email" class="formulario_input" name="correo" id="correo" placeholder="alguien@algo.com">
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error">El correo solo puede contener letras, numeros, puntos y guion bajo</p>
+			</div>
+
+			<!--MASCOTA-->
+			<div class="formulario_grupo" id="grupo_mascota">
+				<label for="mascota" class="formulario_label">Mascota</label>
+				<div class="formulario_grupo_input">
+					<input type="radio" name="mascota" /> Perro &nbsp;&nbsp;<input type="radio" name="mascota" /> Gato &nbsp;&nbsp;<input type="radio" name="mascota" /> Otra (indicar) &nbsp;<input type="text" class="formulario_input" name="mascota_otra" id="mascota_otra" size="5" />
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error"></p>
+			</div>
+
+			<!--ESPACIO-->
+			<div class="formulario_grupo" id="grupo_consulta">
+				<label for="consulta" class="formulario_label"></label>
+				<div class="formulario_grupo_input">
+					<!--<input type="text" class="formulario_input" name="consulta" id="consulta" placeholder="Ingrese aqui su consulta">-->
+					<!--<i class="formulario_validacion_estado fas fa-times-circle"></i>-->
+				</div>
+				<p class="formulario_input_error"></p>
+			</div>
+
+			<!--CONSULTA-->
+			<div class="formulario_grupo" id="grupo_consulta">
+				<label for="consulta" class="formulario_label">Consulta</label>
+				<div class="formulario_grupo_input">
+					<input type="text" class="formulario_input_2" name="consulta" id="consulta" placeholder="Ingrese aqui su consulta">
+					<i class="formulario_validacion_estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input_error">La consulta a ingresar no puede exceder los 200 caracteres.</p>
+			</div>
+
+			<!--EXITO-->
+			<div class="formulario_grupo formulario_grupo_btn_enviar">
+				<button type="submit" class="formulario_btn">Enviar</button>
+				<p class="formulario_mensaje_exito" id="formulario_mensaje_exito">Formulario enviado exitosamente!</p>
+			</div>
+
 		</form>
+
 	</main>	
 		<footer>
 			<p class="pafooter">Nuestra Ubicacion</p>

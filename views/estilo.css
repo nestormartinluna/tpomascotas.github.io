@@ -315,6 +315,16 @@ main {
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
 }
+.formulario_input_2{
+	width: 205%;
+	background: #fff;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	height: 70px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
 .formulario_input:focus{
 	border: 3px solid rgba(31, 102, 233, 0.774);
 	outline: none;
